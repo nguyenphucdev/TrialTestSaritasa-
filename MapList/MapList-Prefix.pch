@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'MapList' target in the 'MapList' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+#endif
+
+#define URL_Json_saritasa @"https://m.saritasa.com/testtask/places.json"
+#define NSDefault_Data @"NSDefault_HaveData"
